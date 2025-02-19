@@ -13,29 +13,60 @@
             
     }
 
-    nav{
-        padding: 10px;
-        font-size: 30px;
-        color: #CFF253;
-        
-      } 
-
-    a{
-        padding: 30px;
-        color: #CFF253;
-        text-decoration: none;
-        font-size: 20px; 
-        max-width: 1020px;
-        min-width: 375px;
-                  
-    }
-    
-input{
-    background-color: #CFF253;
-    padding: 4px;
-    border-radius: 8px;
-    
+   /* General styles for the header */
+header {
+    padding: 10px;
 }
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  /* Allows items to wrap on smaller screens */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    gap: 15px;  /* Space between links */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+.search-icon i {
+    font-size: 1.5em;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;  /* Stack the logo, nav, and search icon */
+        align-items: center;  /* Center the items */
+    }
+
+    .navigation {
+        margin-top: 10px;
+        flex-direction: column;  /* Stack the links vertically */
+        align-items: center;
+    }
+
+    .navigation a {
+        margin: 5px 0;
+    }
+
+    .search-icon {
+        margin-top: 10px;
+    }
+}
+
 .sobremim1 p{
     color: white;
 }
@@ -46,15 +77,15 @@ table.skills{
  margin-top: 50px;
  min-width: 375px;
  width: 100%; 
+ text-align: center;
     
 }
 
-div.projeto{
-    background-image: url(fotoTabela.jpeg);
-    background-position: top;
-    padding: 30px;
-    margin-top: 10px;
-    
+.projeto {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: Arial, sans-serif;
 }
 .projeto li{
     color: white;  
@@ -62,10 +93,63 @@ div.projeto{
 }
 .projeto h2 {
     float: left;
-    padding: 30px;
-    padding-bottom: 90px;
+    padding: 70px;
+    padding-bottom: 150px;
+    font-size: 1.5rem;
+    
+}
+.projeto ol {
+    list-style-type: none;
+    padding-left: 20px;
+}
+.projeto li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+#botao input {
+   
+    padding: 10px ;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+    table {
+        display: block;
+        width: 100%;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .experience {
+        padding-left: 0;
+    }
+
+    .experience h4 {
+        font-size: 16px;
+    }
+
+    .experience p {
+        font-size: 12px;
+    }
+
+    .profissional h2 {
+        font-size: 20px;
+    }
+}
 
 
 .servico{
@@ -77,105 +161,21 @@ div.projeto{
     border: 1px solid black;
     
 }
-p{color: white;}
-@media (max-width: 480px) {
-    nav {
-        display: block;
-        text-align: left;
-    }
 
-    nav a {
-        display: block;
-        margin: 5px 0;
-        padding: 10px;
-        text-align: left;
-    }
-
-    header, footer {
-        padding: 20px 0;
-    }
-
-    main {
-        padding: 10px;
-    }
+#botao2 input {
+   
+    padding: 10px ;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 
 
 
-
-
-
-
-/* Estilo base (aplicado para telas maiores) */
-
-/*
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav {
-    background-color: #444;
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav a {
-    color: #fff;
-    padding: 10px 15px;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-main {
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Estilos para dispositivos com telas pequenas (por exemplo, celulares) */
-
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-
-    nav a {
-        padding: 8px 12px;
-        display: inline-block;
-        margin: 5px;
-    }
-
-    header, footer {
-        padding: 15px 0;
-    }
-
-    main {
-        padding: 15px 0;
-    }
-}
-
-/* Estilos para dispositivos com telas muito pequenas (por exemplo, celulares em retrato) */
-
-
-
-  
-    
 
   
    
