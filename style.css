@@ -1,79 +1,86 @@
 @charset "UTF-8"
 
-*{
-    background-color: #212226;
-}
 
-    body{
-        background-color: #212226;
-        color: #CFF253;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
+ body {
+    background-color: #faf4e5;
+    color: #9D4818;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
             
-    }
-
-   /* General styles for the header */
-header {
-    padding: 10px;
-}
+}  
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;  /* Allows items to wrap on smaller screens */
+    flex-wrap: wrap; 
+    color: #314028;
+    background-color: #9D4818;
+    border-radius: 5px;
 }
 
 .logo {
     font-size: 1.5em;
-    font-weight: bold;
+    padding: 8px;
+    color: white;
+    text-shadow: 0px 1px #314028;
+
 }
 
 .navigation {
     display: flex;
-    gap: 15px;  /* Space between links */
+    gap: 15px;  /* Space between links nave */
+    
 }
 
 .navigation a {
     text-decoration: none;
     color: white;
     font-size: 1.1em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0px 1px #314028;
+   
 }
 
 .search-icon i {
-    font-size: 1.5em;
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;  /* Stack the logo, nav, and search icon */
-        align-items: center;  /* Center the items */
-    }
-
-    .navigation {
-        margin-top: 10px;
-        flex-direction: column;  /* Stack the links vertically */
-        align-items: center;
-    }
-
-    .navigation a {
-        margin: 5px 0;
-    }
-
-    .search-icon {
-        margin-top: 10px;
-    }
-}
-
-.sobremim1 p{
+    font-size: 1.2em;
     color: white;
+    text-shadow: 0px 1px #314028;
+}
+
+p {
+    color: #314028;
+    font-size: 1.1em;
+}
+h2, h3, h4, h5, h6{
+    color:#9D4818;
+    text-shadow: 0px 1px #9D4818;
+   
+}
+
+#sobre {
+    color: #314028; 
+    text-shadow: 0px 1px #9D4818;
+}
+#sobre2{
+    color: #314028; 
+    text-shadow: 0px 1px #9D4818;
+}
+#ex3{
+    color: #314028; 
+    text-shadow: 0px 1px #9D4818;
+}
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 table.skills{
- background-color:rgb(92, 90, 90);border-radius: 10px;
+border-radius: 10px;
+ color: black;
  margin-top: 50px;
  min-width: 375px;
  width: 100%; 
@@ -81,40 +88,24 @@ table.skills{
     
 }
 
-.projeto {
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-    font-family: Arial, sans-serif;
-}
-.projeto li{
-    color: white;  
-    text-align: justify;   
-}
-.projeto h2 {
-    float: left;
-    padding: 70px;
-    padding-bottom: 150px;
-    font-size: 1.5rem;
+.projeto{
+   
+    padding: 90px;
     
 }
-.projeto ol {
-    list-style-type: none;
-    padding-left: 20px;
-}
-.projeto li {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
+
+
+
 #botao input {
-   
-    padding: 10px ;
-    font-size: 1rem;
+
+    padding: 5px ;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #314028;
     color: white;
     border: none;
     border-radius: 5px;
+    box-shadow: 2px 2px #9D4818;
+    
 }
 
 @media (max-width: 768px) {
@@ -155,6 +146,7 @@ table.skills{
 .servico{
     max-width: 1020px;
      min-width: 375px; 
+     background-color: #314028;
     
 }
 .servico td {
@@ -164,15 +156,25 @@ table.skills{
 
 #botao2 input {
    
-    padding: 10px ;
-    font-size: 1rem;
+    padding: 5px ;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #314028;
     color: white;
     border: none;
     border-radius: 5px;
+    box-shadow: 2px 2px #9D4818;
+    text-align: center;
 }
 
+.final{
+    text-align: left;
+    float: right;
+}
+footer{
+    background-color: black;
+    padding: 2px;
+    margin:0px;
+}
 
 
 
@@ -183,3 +185,26 @@ table.skills{
     
    
     
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;  /* Stack the logo, nav, and search icon */
+        align-items: center;  /* Center the items */
+    }
+
+    .navigation {
+        margin-top: 10px;
+        flex-direction: column;  /* Stack the links vertically */
+        align-items: center;
+    }
+
+    .navigation a {
+        margin: 5px 0;
+    }
+
+    .search-icon {
+        margin-top: 10px;
+    }
+}
+
