@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS do Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
 
     <script src="https://kit.fontawesome.com/d132031da6.js" crossorigin="anonymous"></script>
 </head>
@@ -12,21 +18,33 @@
 <body>
    
     <header>
-        <div class="header-container">
-            <div class="logo">
-                William Cruz<br>Portifolio
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light">
+    <div id="h2" class="container-fluid">
+            <a class="navbar-brand" href="#">William Cruz <br>Portifolio</a>
+
+            <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
             </div>
-            <nav class="navigation">
-                <a href="file:///C:/Users/caval/OneDrive/Documentos/Estudo-Curso%20em%20video/Site-William/HTML.CSS/Portifolio%202/Portifolio%20William.html#" >Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Serviços</a>
-                <a href="#">Contactos</a>
-            </nav>
-            <div class="search-icon">
-                <i class="fas fa-search"></i>
-            </div>
-        </div>
-        <hr>
+            
+
     </header>
     
 
@@ -78,17 +96,17 @@
                         </td> 
 
                         <td>
-                            <h4>E-commerce:</h4>
+                            <h3>E-commerce:</h3>
                             <p>Desenvolvimento de uma plataforma de ecomerce personalizavel e otimizada para vendas online</p>
                         </td>
 
                         <td>
-                            <h4>Aplicacao móvel:</h4> 
+                            <h3>Aplicacao móvel:</h3> 
                             <p>Criacao de uma aplicacao móvel com design minimalista e recursos interativos.</p>
                         </td>
 
                         <td>
-                            <h4>Site institucional:</h4>
+                            <h3>Site institucional:</h3>
                             <p>Construcao de um site institucional moderno e responsivo para melhorar a presença digital</p>
                         </td>
                 </tr>
@@ -132,18 +150,13 @@
         <table>
             <tr>
                 <td>
-                    <h1>1</h1>
-                </td>
-                <td>
                     <h3>Pronto para <br> começar?</h3>
                     <p>Entre em contato através do meu <br>e-mail ou pelas redes sociais,<br> Vamos transformar a sua ideia em realidade.</p>
                 </td>
                 <td>
                     <img src="favicon-32x32.png"  alt="">
                 </td>
-                <td>
-                    <h1>2</h1>
-                </td>
+
 
                 <td>
                     <h3>Explore o meu <br> portfolio</h3>
@@ -152,9 +165,6 @@
                 </td>
                 <td>
                     <img src="favicon-32x32.png"  alt="">
-                </td>
-                <td>
-                    <h1>3</h1>
                 </td>
 
                 <td>
