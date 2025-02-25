@@ -1,13 +1,14 @@
 @charset "UTF-8"
 
-main{
-    background-color: #9D4818 !important;
-}
 
+
+
+body{
+    margin: 30px!important;
+}
 
 #nav{
     background-color: #9D4818;
-
 }
 
 #nav a {
@@ -15,8 +16,7 @@ main{
     text-shadow: 0px 1px #314028;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
-    text-align: center;
-    
+    text-align: center 
 }
 
 p {
@@ -28,24 +28,73 @@ h2, h3, h4, h5, h6{
     text-shadow: 0px 1px #9D4818;
    
 }
+.sobremim1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
 
-#sobre {
-    color: #314028; 
-    text-shadow: 0px 1px #9D4818;
+@media (max-width: 768px) {
+    .sobremim1 {
+        width: 95%; /* Ajustar para telas menores */
+    }
 }
-#sobre2{
-    color: #314028; 
-    text-shadow: 0px 1px #9D4818;
-}
-#ex3{
-    color: #314028; 
-    text-shadow: 0px 1px #9D4818;
-}
-.inicio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
+        .inicio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 10px;
+        }
+
+        table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-spacing: 0;
+            margin: 0;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        /* Estilizando a imagem */
+        img {
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px #9d4918ad;
+            width: 100%;
+            max-width: 300px; /* Limita a largura da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+
+        /* Estilo do título */
+        #eu h2 {
+            font-size: 2.1rem;
+            margin: 0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            table {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            img {
+                max-width: 80%; /* Ajusta o tamanho da imagem em telas menores */
+            }
+
+            #eu h2 {
+                font-size: 1.2rem; /* Reduz o tamanho da fonte para dispositivos móveis */
+            }
+        }
+
 
 
 table.skills{
@@ -57,21 +106,25 @@ border-radius: 10px;
  text-align: center;
     
 }
+.skillsh2{
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
 
-.projeto{
-   
-    padding: 90px;
-    
 }
 
 
+.projeto{
+padding: 90px;
+    
+}
 
 #botao input {
 
-    padding: 5px ;
-    cursor: pointer;
-    background-color: #314028;
-    color: white;
+padding: 5px ;
+cursor: pointer;
+background-color: #314028;
+color: white;
     border: none;
     border-radius: 5px;
     box-shadow: 2px 2px #9D4818;
@@ -124,6 +177,8 @@ border-radius: 10px;
     box-shadow: 2px 2px #9D4818;
     text-align: center;
 }
+.profissional
+mar
 
 .final{
     text-align: left;
@@ -144,26 +199,3 @@ footer{
     
    
     
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;  /* Stack the logo, nav, and search icon */
-        align-items: center;  /* Center the items */
-    }
-
-    .navigation {
-        margin-top: 10px;
-        flex-direction: column;  /* Stack the links vertically */
-        align-items: center;
-    }
-
-    .navigation a {
-        margin: 5px 0;
-    }
-
-    .search-icon {
-        margin-top: 10px;
-    }
-}
-
