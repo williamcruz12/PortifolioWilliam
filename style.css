@@ -1,225 +1,134 @@
-@charset "UTF-8"
 
 
-
-
-body{
-    margin: 30px!important;
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
 }
-
-#nav{
-    background-color: #9D4818;
-}
-
-#nav a {
-    color: white;
-    text-shadow: 0px 1px #314028;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
-    text-align: center 
-}
-
-p {
-    color: #314028;
-    font-size: 1.1em;
-}
-h2, h3, h4, h5, h6{
-    color:#9D4818;
-    text-shadow: 0px 1px #9D4818;
+ 
+  body {
+    background-color: #4a7e56 !important;
+    font-family: "Lato", sans-serif!important;
+    line-height: 1.!important;
+  } 
    
-}
-.sobremim1 {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    box-sizing: border-box; 
-}
-
-@media (max-width: 768px) {
-    .sobremim1 {
-        width: 95%; /* Ajustar para telas menores */
-    }
+   #navbarNav{
+    justify-content: center;
+    font-size: x-large;
+    font-family: "Merriweather", serif;  
+  }
+ 
+li{
+  margin: 15px;
+  
 }
 
+.video {
+    height: 400px!important;
+    width: 100%!important;
+    position: relative!important;
+  }
 
-        .inicio {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+.video video {
+  width: 100%!important;
+  height: 100%!important;
+  position: absolute!important;
+  object-fit: cover!important;
+  z-index: 0!important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Efeito de sombra */
+      border-radius: 10px; /* Se quiser bordas arredondadas */
+  }
+
+/* h1 video*/
+.video .caption {
+  z-index: 1!important;
+  position: relative!important;
+  text-align: center!important;
+  color:#ffa500;
+  text-shadow: 0 4px 8px black;
+  margin: auto;
+}
+#azeite{
+  font-family: "Merriweather", serif;
+    color:#ffa500 !important; 
+    text-align: center!important;
+    text-shadow: 0 4px 8px black;
+}
+#azite p{
+  color: black;
+}
+ 
+  h3,   h4 {
+    font-family: "Merriweather", serif;
+    color:#ffa500 !important; 
+    text-align: center!important;
+    text-shadow: 0 4px 8px black;
            
-        }
+  }
 
-        table {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-spacing: 0;
-            margin: 0;
-        }
-
-        td {
-            padding: 10px;
-        }
-
-        /* Estilizando a imagem */
-        img {
-            border-radius: 10px;
-            box-shadow: 1px 1px 1px 1px #9d4918ad;
-            width: 100%;
-            max-width: 300px; /* Limita a largura da imagem */
-            height: auto; /* Mantém a proporção da imagem */
-        }
-
-        /* Estilo do título */
-        #eu h2 {
-            font-size: 2.1rem;
-            margin: 0;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            table {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            img {
-                max-width: 80%; /* Ajusta o tamanho da imagem em telas menores */
-            }
-
-            #eu h2 {
-                font-size: 1.2rem; /* Reduz o tamanho da fonte para dispositivos móveis */
-            }
-        }
-
-
-
-table.skills{
-border-radius: 10px;
- color: black;
- margin-top: 50px;
- min-width: 375px;
- width: 100%; 
- text-align: center;
-    
-}
-.skillsh2{
-    text-align: center;
-    margin-top: 30px;
-    padding: 30px;
-
-}
-
-
-.projeto{
-padding: 90px;
-    
-}
-
-#botao input {
-
-padding: 5px ;
-cursor: pointer;
-background-color: #314028;
-color: white;
-border: none;
-border-radius: 5px;
-box-shadow: 2px 2px #9D4818;
-    
-}
-
-@media (max-width: 768px) {
-    table {
-        display: block;
-        width: 100%;
-    }
-
-    td {
-        display: block;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .image {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .experience {
-        padding-left: 0;
-    }
-
-    .experience h4 {
-        font-size: 16px;
-    }
-
-    .experience p {
-        font-size: 12px;
-    }
-
-    .profissional h2 {
-        font-size: 20px;
-    }
-}
-
-
-#botao2 input {
    
-    padding: 5px ;
-    cursor: pointer;
-    background-color: #314028;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 2px 2px #9D4818;
-    text-align: center;
-}
-
-.final{
-    text-align: left;
-    float: right;
-}
-footer{
-    background-color: black;
-    padding: 0px;
-    margin: 5px;
-}
-
-@media (max-width: 768px) {
-    .minhas-skills {
-        text-align: center;
-    }
+   h1 {
+    font-family: "Merriweather", serif;
+    color: #F09804!important;
+    margin-bottom: 1rem !important;
+    font-size: 3.5rem !important;
+    line-height: 250px !important;
+    text-shadow: 0 4px 8px black!important;
     
-    .services {
-        margin-bottom: 20px;
-    }
-}
+   }
+   h2{
+    font-family: "Merriweather", serif;
+    color:#ffa500 !important; 
+    text-align: center;
+    font-size: 2.5rem !important;
+    text-shadow: 0 4px 8px black;
+          
+   }
+   
 
-
-
+   p {
+    margin-bottom: 1.5rem !important;
+    color: #fff !important;
+    font-size: 1.3em;
+    font-weight: 1.3em;
+    text-align: justify;
+    margin: 8px;
+    text-shadow: 0 4px 8px black;
+   } 
 
   
-   
- 
-    
-   
- 
+   @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
 
+   .btn-primary {
+    background-color: brown !important;
+  } 
 
- 
+.btn-primary:hover {
+    border-color: #CFF250 !important;
+    color: #CFF250 !important;
+   }
+   .opacity-75{
+    margin-left: 30px;
+   }
+   #icone{
+    background-color: #4a7e56;
 
-
-
-
-
-
-
-
-
- 
- 
-
- 
-
+   }
  
