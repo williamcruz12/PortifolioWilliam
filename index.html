@@ -1,344 +1,249 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initialscale=1.0">
- <title>Site Freixo </title>
- <meta name="description"
- content="Portfólio de Jane Doe, uma desenvolvedora web apaixonada por criar experiências digitais envolventes e intuitivas. Conheça meus projetos e serviços.">
- <meta name="keywords"
- content="Jane Doe, desenvolvedora web, web developer, frontend, back-end, UX/UI, portfólio, projetos web, serviços de desenvolvimento web">
- <meta name="author" content="Site Freixo">
- <link rel="stylesheet" href="style.css"><link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstra
-p.min.css" rel="stylesheet"
- integrity="sha384-
-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS do Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Adicionando Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+
+    <script src="https://kit.fontawesome.com/d132031da6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <div> 
-        <p id="teste" class="navbar-brand">
-        <div class="opacity-75"><img src="fec.gif" class="rounded float-left" alt="brasao" width="50px" style="float: left;" ></p>
-    </div>
-    
-    <nav class="navbar navbar-expand-lg navbar">
-      <div class="container-fluid">
-          <div class="col-md-5" style="width: auto!important;"></div>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav justify-content-center">
-                <li class="nav-item" >
-                  <button style="text-shadow: 0 1px 1px rgba(0, 0, 0, 0.678);" type="button" class="btn btn-outline-warning">Home</button>
-                </li>
-                <li class="nav-item">
-                  <button style="text-shadow: 0 1px 1px rgba(0, 0, 0, 0.678); type="button" class="btn btn-outline-warning">Atividades</button>
-                </li>
-                <li class="nav-item">
-                  <button style="text-shadow: 0 1px 1px rgba(0, 0, 0, 0.678); type="button" class="btn btn-outline-warning">Gastronomia</button>
-                </li>
-                <li class="nav-item">
-                  <button style="text-shadow: 0 1px 1px rgba(0, 0, 0, 0.678); type="button" class="btn btn-outline-warning">Vinhos</button>
-                </li>
-                <li class="nav-item">
-                  <button style="text-shadow: 0 1px 1px rgba(0, 0, 0, 0.678); type="button" class="btn btn-outline-warning">O azeite</button>
-                </li>
-                <li></li><i class="fas fa-search" style="float:right;"></i></li>
-
-                <a href="pesquisa.html" style="float:right;"><i 
-                  class="fa fa-search"></i></a>
-             </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
- <!--- Div video -->   
- <div class="video">
-  <video autoplay muted defaultMuted loop>
-    <source src="46301467-04bc-4812-a22d-5526dfda10a8 (1).MOV" type="video/mp4"  />
-  </video>
-  
-  <!--- Div caption sobrepoe texto ao video -->  
-  <div class="caption">
-    <div class="row mb-5">
-      <h1 class="mb-5">Freixo de Espada à Cinta</h1>
-    </div>
-  </div>
-</div>
-
    
- <main class="container my-5">
-<br>
-  <section class="mb-5" style="margin: auto;">
-    <h2 class="mb-4">A História</h2>
-    <br><br>
-    <div class="row">
-      <!-- Coluna da imagem, ajustando para responsividade -->
-      <div class="col-12 col-md-3">
-        <img src="freixo300.jpg" style="border-radius: 10px; box-shadow: 0 4px 8px #ffa500;" class="img-fluid rounded" alt="brasao">
-      </div>
-     
-      <!-- Coluna do texto -->
-      <div class="col-12 col-md-9">
-        <p>Há diversas explicações para o curioso nome desta vila. Uns dizem que teve origem no nome de um fidalgo godo "Espadacinta", outros no brasão de um fidalgo leonês que tinha um freixo e uma espada ou, ainda, na lenda que diz que D. Dinis, rei de Portugal, quando fundou a localidade no séc. XIV, amarrou a sua espada a um freixo, antes de se encostar à árvore a descansar. Essa árvore, de grande porte, está há mais de 500 anos no largo principal da vila e merece observação atenta.</p>
-      </div>
-    </div>
-  </section>
-  
+    <header>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light">
+    <div id="h2" class="container-fluid">
+            <a class="navbar-brand" href="#">William Cruz <br>Portifolio</a>
 
-<section class="mb-5">
-    <h2 class="mb-4">Atividades na regiao </h2>
-    <br><br>
-  <div class="row text-center">
-    <div class="col-md-4">
-      <h3>Nossa Sra. do Douro</h3>
-      <br>
-      
-      <img src="Santa300.png" style="border-radius: 10px; box-shadow: 0px 4px 8px #ffa500;" alt="Desenvolvimento Front-end" class="img-fluid">
-      <br><br>
-      <p>O Poder dos Sentidos…
-       Integrado em toda a sua extensão territorial, no Parque do Douro Internacional, Freixo de Espada à Cinta dispõe de uma rede de miradouros e de outros locais de situação estratégica, de onde se pode apreciar todo o esplendor da natureza.</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48144.27801767288!2d-6.8792616633373065!3d41.04674910000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3c75cf2b64e5ad%3A0xba435da7ef892a47!2sMiradouro%20de%20Penedo%20Dur%C3%A3o!5e0!3m2!1spt-PT!2spt!4v1739406839320!5m2!1spt-PT!2spt" width="330" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <p>Como chegar</p>
-    </div>
-        
-    <div class="col-md-4">
-        <h3>Barragem de Saucelle </h3>
-        <br>
-        <img src="Barragem300.png" style="border-radius: 10px; box-shadow: 0px 4px 8px #ffa500;" alt="Desenvolvimento Front-end" class="img-fluid">
-        <br>
-        <br>
-        <p>
-          O Poder dos Sentidos…
-          Integrado em toda a sua extensão territorial, no Parque do Douro Internacional, Freixo de Espada à Cinta dispõe de uma rede de miradouros e de outros locais de situação estratégica, de onde se pode apreciar todo o esplendor da natureza.</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96291.24097850795!2d-6.95126245664061!3d41.0449142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3c75b1c98f9e73%3A0xb676328364bc2840!2sAlbufeira%20de%20Saucelle!5e0!3m2!1spt-PT!2spt!4v1739407122314!5m2!1spt-PT!2spt" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <p>Como chegar </p>
-      </div>
+            <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+            
 
-    <div class="col-md-4">
-        <h3>Miradouro Espanha </h3>
-        <br>
-        <img src="Gaiola300.png" style="border-radius: 10px; box-shadow: 0px 4px 8px #ffa500;" alt="Design de UX/UI" class="img-fluid">
-        <br><br>
-        <p>
-          O Poder dos Sentidos…
-          Integrado em toda a sua extensão territorial, no Parque do Douro Internacional, Freixo de Espada à Cinta dispõe de uma rede de miradouros e de outros locais de situação estratégica, de onde se pode apreciar todo o esplendor da natureza.</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96291.24097850795!2d-6.95126245664061!3d41.0449142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3c75b1c98f9e73%3A0xb676328364bc2840!2sAlbufeira%20de%20Saucelle!5e0!3m2!1spt-PT!2spt!4v1739407122314!5m2!1spt-PT!2spt" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <p>Como chegar</p>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="mb-5" id="casa">
-  <h2 class="mb-4">A casa</h2>
-  <br><br>
-  <div class="row">
-    <div class="col-md-3">
-      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="casa200P.JPG" style="border-radius: 10px; box-shadow: 0px 4px 8px #ffa500; class=" d-block w-100 alt="Casa vista 1">
-          </div>
-          <div class="carousel-item">
-            <img src="casafrente200.JPG" style="border-radius: 10px; box-shadow: 0px 4px 8px #ffa500; class="d-block w-100 alt="Frente da casa">
-          </div>
-          <div class="carousel-item">
-            <img src="casafundo.JPG" style="border-radius: 10px; box-shadow: 0px 4px 8px #ffa500; class="d-block w-100 alt="Fundo da casa">
-          </div>
-          <div class="carousel-item">
-            <img src="quarto1.JPG" style="border-radius: 10px; box-shadow: 0px 1px 0px 2px #ffa500; class="d-block w-100 alt="Quarto 1">
-          </div>
-          <div class="carousel-item">
-            <img src="quartoporta.JPG" style="border-radius: 10px; box-shadow: 0px 4px 8px #ffa500; class="d-block w-100 alt="Porta do quarto">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="col-md-9">
-      <p id="pcasa">Há diversas explicações para o curioso nome desta vila. Uns dizem que teve origem no nome de um fidalgo godo "Espadacinta", outros no brasão de um fidalgo leonês que tinha um freixo e uma espada ou, ainda, na lenda que diz que D. Dinis, rei de Portugal, quando fundou a localidade no séc. XIV, amarrou a sua espada a um freixo, antes de se encostar à 
-        <br><br><br>
-      </div>
-
-
-
-<section class="mb-5">
-  <h2 class="mb-4">Gastronomia local </h2>
-  <br><br>
-<div class="row text-center">
-  <div class="col-md-4">
-    <h3>Medalhões de vitela</h3>
-    <br>
-    <img src="carne.png" style="border-radius: 10px; box-shadow: 0px 4px 8px #ffa500; alt="Desenvolvimento Front-end" class="img-fluid">
-    <br><br>
-    <p>Preparação: <br>
-      Coram-se os medalhões com manteiga e louro. Junta-se-lhes os cogumelos e o fiambre e leve ao forno</p>
-      
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48144.27801767288!2d-6.8792616633373065!3d41.04674910000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3c75cf2b64e5ad%3A0xba435da7ef892a47!2sMiradouro%20de%20Penedo%20Dur%C3%A3o!5e0!3m2!1spt-PT!2spt!4v1739406839320!5m2!1spt-PT!2spt" width="330" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <p>Como chegar</p>
-  </div>
-      
-  <div class="col-md-4">
-      <h3>Bacalhau </h3>
-      <br>
-      <img src="bacalhau.png" style="border-radius: 10px; box-shadow: 0px 4px 8px #ffa500; alt="Desenvolvimento Front-end" class="img-fluid">
-      <br><br>
-      <p>
-        O bacalhau assado, temperado com pimenta, alho e azeite, também se destaca em toda a região como alternativa aos pratos de carne.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96291.24097850795!2d-6.95126245664061!3d41.0449142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3c75b1c98f9e73%3A0xb676328364bc2840!2sAlbufeira%20de%20Saucelle!5e0!3m2!1spt-PT!2spt!4v1739407122314!5m2!1spt-PT!2spt" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Como chegar </p>
-    </div>
-
-  <div class="col-md-4">
-      <h3>Chouriça e alheira </h3>
-      <br>
-      <img src="alheira.png" style="border-radius: 10px; box-shadow: 0px 4px 8px #ffa500; alt="Design de UX/UI" class="img-fluid">
-      <br><br>
-      <p>
-        É uma mesa farta feita de sopas de alho, alheira e chouriça grelhada, bacalhau assado, costeletão de vitela e vinho (20 euros por pessoa).</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96291.24097850795!2d-6.95126245664061!3d41.0449142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3c75b1c98f9e73%3A0xb676328364bc2840!2sAlbufeira%20de%20Saucelle!5e0!3m2!1spt-PT!2spt!4v1739407122314!5m2!1spt-PT!2spt" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Como chegar</p>
-  </div>
-</div>
-</section>
-
-  <section class="mb-5">
-        <h2 class="mb-4">O que beber na região </h2>
-        <br>
-        <br>
-      <div class="container marketing">
-<!-- Three columns of text below the carousel -->
-        <div class="row">
-          <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" />
-            <image href="tinto.png" x="0" y="0"></svg></svg>
-            <h3>Vinho tinto</h3>
-            <br>
-            <p>Vinho tinto é a bebida resultante da fermentação do suco ou mosto extraído de uvas pretas ou tintas no qual é imperativo que haja maceração das cascas no mosto com a finalidade de se atribuir cor e sabor à bebida.</p>
-            <p><a class="btn btn-secondary" href="https://pt.wikipedia.org/wiki/Vinho_tinto" target="_blank">View details &raquo;</a></p>
-          </div>
-
-          <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Caipirinha</title><rect wwidth="100%" height="100%" /><image href="branco.png" x="0" y="0"></svg>
-
-            <h3>Vinho branco</h3>~
-            <br>
-            <p>O vinho branco é um vinho com coloração variando até o mais profundo dourado. Ele é produzido sem as casca das uvas, pois é a casca das uvas que confere a cor escura dos vinhos tintos.</p>
-            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-          </div>
-
-          <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Caipirinha</title><rect width="100%" height="100%" /><image href="rose1.jpg" x="0" y="0"></svg>
-            <h3>Vinho rosé</h3>
-            <br>
-            <p>O rosé é resultante da fermentação do suco extraído de uvas tintas na qual há um curto contato das cascas com o mosto, com a finalidade de se atribuir um leve toque rosado de cor e sabor levemente tânico à bebida.</p>
-            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-          </div>
-        </div>
-  </section>
-
-
-  <section class="mb-5">
-    <h2 class="mb-4">O azeite  </h2>
-    <br><br>
-  <div class="row text-center">
-    <div class="col-md-4">
-      <br>
-      <img src="19a71b7d-3fc9-4308-b369-ee5438cd1805.JPG" alt="Desenvolvimento Front-end" style="border-radius: 10px; box-shadow: 0px 4px 8px #ffa500; class="img-fluid"  >
-      <br><br><br>
-      <p>Preparação: Coram-se os medalhões com manteiga e louro. Junta-se-lhes os cogumelos e o fiambre e leve ao forno</p>
-    </div>
-
-    <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" />
-      <image href="azeite4.JPG"  x="0" y="-50" border-raius ></svg>
-      <h3>O azeite </h3>
-      <br>
-      <p>O rosé é resultante da fermentação do suco extraído de uvas tintas na qual há um curto contato das cascas com o mosto, com a finalidade de se atribuir um leve toque rosado de cor e sabor levemente tânico à bebida.</p>
-      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-    </div>
+    </header>
     
-       
-    <div class="col-md-4">
-        <br>
-        <img src="19a71b7d-3fc9-4308-b369-ee5438cd1805.JPG" alt="Desenvolvimento Front-end" style="border-radius: 10px; box-shadow: 0px 4px 8px #ffa500;  class="img-fluid">
+
+    <main>
+        
+        <div class="inicio">
+            <table>
+                <tr>
+                <td><img src="Foto William.jpg" alt="foto" height="300vw" style="border-radius: 10px; box-shadow: 1px 1px 1px 1px #9d4918ad;"></td>
+                <td id="eu"><h2 id="sobre2">Olá eu sou o William Cruz <br> e sou Web developer!</h2></td>
+            </table>
+        </div>
+    <br><br><br>
+        <div class="sobremim1">
+            <h2>Sobre Mim</h2>
+            <p>Sou apaixonado por criar experiências digitais envolventes e 
+            intuitivas. Posso ajudar a sua ideia em realidade!</p>
+        </div>
+        
+
+  
+        <div class="skills1">
+    <table class="skills">
+        <h2 class="skillsh2">As minhas skills</h2>
+
+        <tr>
+            <td>
+                <h3>Programacao Web <br> HTML, CSS, JavaScript</h3>
+                <p>Dominio HTLM, CSS e JavaScript para <br>criar interfaces responcivas e interativas, desenvolvimento de website com recurso às linguagens HTML, CSS, JavaScript e à biblioteca Bootstrap</p>
+                <img src="-javascript-171669655.webp" alt="foto1" max-width="200px" height="200px" style="border-radius: 10px; box-shadow: 1px 1px 1px 1px #9d4918ad;">
+            </td>
+
+            <td>
+                <h3>Programação <br>PHP</h3>
+                <p>Penso no utulizador em cada etapa, <br>projetando layouts limpos e experiencias intuitivas.</p>
+                <img src="php imagem.png" alt="foto2" max-width="200px" height="200px" style="border-radius: 10px; box-shadow: 1px 1px 1px 1px #9d4918ad;">
+            </td>
+
+            <td>
+                <h3>Bade de dados <br> MySQL</h3>
+                <p>Penso no utulizador em cada etapa, <br>projetando layouts limpos e experiencias intuitivas.</p>
+                <img src="msqi.png" alt="foto3" max-width="200px" height="200px" style="border-radius: 10px; box-shadow: 1px 1px 1px 1px #9d4918ad;">
+            </td>
+
+            <td>
+                <h3>Programação <br>Python</h3>
+                <p>Penso no utulizador em cada etapa, projetando layouts limpos e experiencias intuitivas .</p>
+                <img src="python.png" alt="foto3" max-width="200px" height="200px" style="border-radius: 10px; box-shadow: 1px 1px 1px 1px #9d4918ad;">
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+        
+
+        
+
+        <div class="projeto">
+            <h2 style="text-align: center;">Os meus projetos </h2>
+            <br><br>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="web.jpg" alt="" width="300px">
+                        </td> 
+
+                        <td>
+                            <h3>E-commerce:</h3>
+                            <p>Desenvolvimento de uma plataforma de ecomerce personalizavel e otimizada para vendas online</p>
+                        </td>
+
+                        <td>
+                            <h3>Aplicacao móvel:</h3> 
+                            <p>Criacao de uma aplicacao móvel com design minimalista e recursos interativos.</p>
+                        </td>
+
+                        <td>
+                            <h3>Site institucional:</h3>
+                            <p>Construcao de um site institucional moderno e responsivo para melhorar a presença digital</p>
+                        </td>
+                </tr>
+                    
+                </table>  
+                <a id="botao" href="https://williamcruz12.github.io/sitefreixo/"target="_blank"
+                    style="float:right;"><input  value="Conheça meu trabalho" ></a>       
+        </div>
+
+
+
+
+        <div class="profissional">
+            <h2 style="text-align: center;">Experiencia profissional</h2>
+            <br>
+        
+            <table>
+                <tr>
+                    <td class="image">
+                        <img src="aperto de mao.webp" alt="Imagem de aperto de mão" class="img-responsive">
+                    </td>
+        
+                    <td class="experience">
+                        <h4>1. Web Developer Junior</h4>
+                        <p>Web Developer Sénior: Libero projetos completos para clientes de alto perfil</p>
+                        <h4>2. Freelancer de Desenvolvimento Web</h4>
+                        <p>Trabalhei com diversos clientes, desde pequenas empresas até grandes projetos</p>
+                        <h4>3. Estagiário de desenvolvimento</h4>
+                        <p>Estagiário de desenvolvimento: <br> Iniciei a minha experiência profissional numa empresa de tecnologia.</p>
+                    </td>
+                </tr>
+            </table>
+        
+            <a id="botao2" href="https://williamcruz12.github.io/sitefreixo/" target="_blank" style="float:right;">
+                <input type="button" value="CV Download">
+            </a>
+        </div>
+        <br><br><br>
+    
+    <div>            
+        <h3 style="text-align: center;">Obrigado por me visitar!</h3>
         <br><br>
-        <p>
-          O bacalhau assado, temperado com pimenta, alho e azeite, também se destaca em toda a região como alternativa aos pratos de carne.</p>
-      
-      </div>
-  </div>      
-<br><br><br>
+        <table>
+            <tr>
+                <td>
+                    <h5>Pronto paracomeçar?</h5>
+                    <p>Entre em contato através do meu <br>e-mail ou pelas redes sociais,<br> Vamos transformar a sua ideia em realidade.</p>
+                </td>
+               
 
-<section class="mb-5">
-    <h3 class="mb-4">Duvidas? Estamos aqui.</h3>
-    <br><br>
-  <div class="row text-center">
-    <div class="col-md-4">
-      <h4>Envie uma mensagem</h4>
-      <p>Entre em contato através do meu e-mail ou pelas redes sociais.</p>
-    </div>
+                <td>
+                    <h5>Explore o meu <br> portfolio</h5>
+                    <p>Confira exemplos
+                       do meu trabalho e veja <br> como posso ajudá-lo.</p> 
+                </td>
+                               
+            </tr>
+        </table>
 
-    <div class="col-md-4">
-      <h4>Agende uma reunião</h4>
-      <p>Marque uma reunião para discutir seu projeto em detalhes.</p>
-    </div>
 
-    <div class="col-md-4">
-      <h4>Conecte-se comigo</h4>
-      <p>Siga-me nas redes sociais para acompanhar minhas novidades.</p>
-    </div>
-  </div>
+        <section class="minhas-skills row container">
+            <h2 class="text-center">Fale comigo</h2>
+            <br><br><br><br>
+            
+            <!-- Coluna de telefone -->
+            <div class="services col-12 col-md-4 text-center">
+                <a href="https://wa.me/910850273"><i class="fa fa-phone" style="font-size:48px;"></i></a>
+                <h3>Telefone</h3>
+                <p>Ligue-me para obter <br> suporte imediato</p>
+                <a href="https://wa.me/910850273" class="btn btn-success btn-lg">
+                    <i class="bi bi-whatsapp me-2"></i>WhatsApp
+                  </a>
+               
+            </div>
+            
+            <!-- Coluna de email -->
+            <div class="services col-12 col-md-4 text-center">
+                <a href="cavalcante.william@icloud.com">
+                    <i class="fa fa-envelope" style="font-size:48px;"></i>
+                </a>
+                <h3>E-mail</h3>
+                <p>Envie-me um email <br> com as suas questões</p>
+                <p><a href="cavalcante.william@icloud.com">Clique aqui para me enviar um e-mail!</a></p>
+            </div>
 
-    <div class="text-center mt-4">
-      <a href="contactos.html" target="_blank" class="btn btn-primary">Reserve já</a>
-    </div>
-</section>
+            <div class="services col-12 col-md-4 text-center">
+                <a href="cavalcante.william@icloud.com">
+                    <i class="fa fa-envelope" style="font-size:48px;"></i>
+                </a>
+                <h3>LinkedIn</h3>
+                <p>Visite meu perfinal <br>tambem no LinkedIn</p>
+                <p><a href="#" class="btn btn-primary btn-lg" style="background-color: #0077b5; border-color: #0077b5;">
+                    <i class="bi bi-linkedin me-2"></i>LinkedIn
+                  </a></p>
+            </div>
+        </section>
 
- </main>
+                
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- Adicionando o Bootstrap (opcional, mas para estilização) -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
 
+        <!-- Scripts do Bootstrap (opcional) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</main>
+
+                   
+<footer>          
+<p style="color: white; background-color: black;" >Direitos reservados William cruz </p>
+
+</footer>
+                 
 </body>
-
-
- <footer class="bg-dark text-light py-3">
-        <div class="container text-center">
-        <p>William Cruz | Web Developer | <a href="politica-privacidade.html" class="text-light">Política de Privacidade</a></p>
-        <table style="width:100%;">
-          <tr>
-          <td style="float:right;"><img src="icone-facebook.png" alt="e-mail"></td>
-          <td style="float:right;"><img src="icone-youtube.png" alt="face"></td>
-          <td style="float:right;"><img src="icone-instagram.png" alt="inta"></td>
-          <td style="float:right;"><img src="icone-linkedin.png" alt="tele"></td>
-          </tr>
-      
-      </table>
- </div>
-
-
- </footer>
-
- 
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
 </html>
