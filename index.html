@@ -20,7 +20,7 @@
 
 <body>
    
-    <header>
+    <header id="inic1">
         <nav id="nav" class="navbar navbar-expand-lg navbar-light">
     <div id="h2" class="container-fluid">
             <a class="navbar-brand" href="#">William Cruz <br>Portifolio</a>
@@ -32,161 +32,148 @@
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="sobremim">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobremimnav">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
+                        <a class="nav-link" href="#skillnav">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contactos</a>
+                        <a class="nav-link" href="#cont-nav" target="_blank">Contactos</a>
                     </li>
                 </ul>
             </div>
             
-
     </header>
     
 
     <main>
         
         <div class="inicio">
-            <table>
-                <tr>
-                <td><img src="Foto William.jpg" alt="foto" height="300vw" style="border-radius: 10px; box-shadow: 1px 1px 1px 1px #9d4918ad;"></td>
-                <td id="eu"><h2 id="sobre2">Olá eu sou o William Cruz <br> e sou Web Development!</h2>
-                </td>
-                <td><a id="botao" href="CV William Atualizado.pdf" download style="float:right;" target="_blank">
+            <div class="conteudo">
+              <img src="Foto William.jpg" alt="foto" class="foto" />
+              <div id="eu">
+                <h2 id="sobre2">Olá, eu sou o William Cruz <br> e sou Web Development!</h2>
+              </div>
+              <div>
+                <a id="botao" href="CV William Atualizado.pdf" download style="float: right;" target="_blank">
                     <input type="button" value="CV Download">
-                </a></td>
-            </table>
-        </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        
+
+
+
     <br><br><br>
-        <div class="sobremim1">
-            <h2>Sobre Mim</h2>
-            <p>Sou um programador júnior apaixonado por tecnologia e por criar experiências digitais envolventes e intuitivas.
-            Tenho um perfil proativo, gosto de trabalhar em equipe, tenho facilidade com comunicação e valorizo um ambiente colaborativo.
-            Atualmente, venho me desenvolvendo em Web Development, sempre com foco em escrever código limpo e entregar soluções que façam a diferença, gosto de encarar desafios e acredito que a tecnologia pode transformar a forma como as pessoas vivem e se conectam.</p>
-        </div>
+    <div class="sobremim1" id="sobremimnav">
+        <h2>Sobre Mim</h2>
+        <p>Sou um programador júnior apaixonado por tecnologia e por criar experiências digitais envolventes e intuitivas.
+        Tenho um perfil proativo, gosto de trabalhar em equipa, tenho facilidade com comunicação e valorizo um ambiente colaborativo.
+        Atualmente, estou desenvolvendo em Web Development, sempre com foco em escrever código limpo e entregar soluções que façam a diferença, gosto de encarar desafios e acredito que a tecnologia pode transformar a forma como as pessoas vivem e se conectam.</p>
+    </div>
+    
+
         
 
   
-        <div class="skills1">
-    <table class="skills">
-        <h2 class="skillsh2">As minhas skills</h2>
+        <div class="skills1" id="skillnav">
+    <h2 class="skillsh2">As minhas skills</h2>
+    <div class="skills">
+        <div class="skill-item">
+            <h3>Programação Web <br>HTML5 / CSS3</h3>
+            <p>Boa compreensão dos princípios de marcação semântica com HTML5 e estilização com CSS3. Capacidade de criar layouts responsivos e acessíveis. <br>Experiência com criação de páginas estáticas, familiaridade com boas práticas de estruturação de código e otimização de performance.</p>
+            <img src="pngtree-logo-html-css-icone-and-png-image_9202872.png" alt="HTML5 e CSS3">
+        </div>
 
-        <tr>
-            <td>
-                <h3>Programação Web <br>HTML5 / CSS3</h3>
-                <p>Boa compreensão dos princípios de marcação semântica com HTML5 e estilização com CSS3. Capacidade de criar layouts responsivos e acessíveis. <br>
-                Experiência com criação de páginas estáticas, Familiaridade com boas práticas de estruturação de código e otimização de performance.</p>
-                <img src="pngtree-logo-html-css-icone-and-png-image_9202872.png" alt="foto2" max-width="200px" height="200px" style="border-radius: 10px; box-shadow: 1px 1px 1px 1px #9d4918ad;">
-            </td>
+        <div class="skill-item">
+            <h3>Programação <br>JavaScript</h3>
+            <p>Uso JavaScript focado no desenvolvimento de interfaces web interativas. Tenho conhecimento dos fundamentos da linguagem e manipulação do DOM para criar elementos dinâmicos e interativos em páginas HTML. <br> Estou em constante aprendizagem, procurando aplicar boas práticas de desenvolvimento e melhorar a minha lógica de programação no dia a dia.</p>
+            <img src="javascript-transparent-logo-free-png.webp" alt="JavaScript">
+        </div>
 
-            <td>
-                <h3>Programação <br>JavaScript</h3>
-                <p>Atuo com JavaScript focado no desenvolvimento de interfaces web interativas. Tenho conhecimento dos fundamentos da linguagem, tambem com a manipulação do DOM para criar elementos dinâmicos e interativos em páginas HTML. <br> Estou em constante aprendizado, buscando aplicar boas práticas de desenvolvimento e melhorar minha lógica de programação no dia a dia.</p>
-                <img src="javascript-transparent-logo-free-png.webp" alt="foto2" max-width="200px" height="200px" style="border-radius: 10px; box-shadow: 1px 1px 1px 1px #9d4918ad;">
-            </td>
+        <div class="skill-item">
+            <h3>Programação <br>PHP</h3>
+            <p>Conhecimento nos fundamentos da linguagem PHP para desenvolvimento web. Experiência com criação de páginas dinâmicas, manipulação de formulários, conexão com bancos de dados MySQL e organização de código em estruturas funcionais. <br>Estou em constante evolução em busca de boas práticas, segurança básica no backend e integração.</p>
+            <img src="php imagem.png" alt="PHP">
+        </div>
 
-            <td>
-                <h3>Programação <br>PHP</h3>
-                <p>Conhecimento nos fundamentos da linguagem PHP para desenvolvimento web backend. Experiência com criação de páginas dinâmicas, manipulação de formulários, conexão com bancos de dados MySQL e organização de código em estruturas funcionais. <br>Estou em constante evolução, buscando entender boas práticas, segurança básica no backend e integração.</p>
-                <img src="php imagem.png" alt="foto2" max-width="200px" height="200px" style="border-radius: 10px; box-shadow: 1px 1px 1px 1px #9d4918ad;">
-            </td>
+        <div class="skill-item">
+            <h3>Programação <br>Python</h3>
+            <p>Conhecimento nos fundamentos da linguagem Python, familiaridade com boas práticas de codificação, organização de código e princípios da programação orientada a objetos. <br> Estou em constante aprendizagem, explorando também bibliotecas, com interesse em áreas como automação, desenvolvimento web e análise de dados.</p>
+            <img src="python.png" alt="Python">
+        </div>
 
-            <td>
-                <h3>Programação <br>Python</h3>
-                <p>Conhecimento nos fundamentos da linguagem Python, familiaridade com boas práticas de codificação, organização de código e princípios da programação orientada a objetos. <br> Estou em constante aprendizado, explorando também bibliotecas, com interesse em áreas como automação, desenvolvimento web e análise de dados.
-
-                </p>
-                <img src="python.png" alt="foto2" max-width="200px" height="200px" style="border-radius: 10px; box-shadow: 1px 1px 1px 1px #9d4918ad;">
-            </td>
-
-            <td>
-                <h3>Base Dados<br>MySQL</h3>
-                <p>Conhecimento em modelagem e manipulação de bancos de dados relacionais com MySQL. Habilidade para escrever consultas SQL, e funções agregadas. <br> Conhecimento com scripts de backup e restauração de banco, e integração com linguagens como PHP e Python em projetos.</p>
-                <img src="free-mysql-21-1174941.webp" alt="foto2" max-width="200px" height="200px" style="border-radius: 10px; box-shadow: 1px 1px 1px 1px #9d4918ad;">
-            </td>
-        </tr>
-
-    </table>
+        <div class="skill-item">
+            <h3>Base Dados<br>MySQL</h3>
+            <p>Conhecimento em modelagem e manipulação de bancos de dados relacionados com MySQL. Habilidade para escrever consultas SQL e funções agregadas. <br> Conhecimento com scripts de backup e restauração de banco e integração com linguagens como PHP e Python em projetos.</p>
+            <img src="free-mysql-21-1174941.webp" alt="MySQL">
+        </div>
+    </div>
 </div>
 
         
 
-        
-
         <div class="projeto">
-            <h2 style="text-align: center;">Os meus projetos </h2>
-            <br><br>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="web.jpg" alt="" width="200px">
-                            <h3>Site institucional:</h3>
-                            <p>Desenvolvi um site institucional para apresentar a identidade de uma cidade, seus serviços e facilitar o contato com clientes. Utilizei HTML, CSS e JavaScript para criar uma interface responsiva e funcional, com seções como Sobre nós, Serviços, Contato e formulários. O projeto aprimorou minhas habilidades em design, desenvolvimento front-end e otimização web.</p>
-                            <a id="botao" href="https://williamcruz12.github.io/sitefreixo/"target="_blank"
-                            style="float:right;"><input  value="Conheça meu trabalho" ></a>
-                        </td>
-
-                        <td>
-                            <img src="ecomerce.avif" alt="" width="200px" max-height="100px">
-                            <h3>Site institucional:</h3>
-                            <p>Desenvolvi portfólios online para exibir projetos, habilidades e experiência profissional dos meus clientes. Utilizei HTML, CSS e JavaScript para criar uma interface limpa e responsiva, permitindo fácil navegação em diferentes dispositivos. O site inclui seções como Sobre mim, Projetos e Contato, destacando minha evolução e experiência em desenvolvimento web.</p>
-                            <a id="botao" href="https://williamcruz12.github.io/sitefreixo/"target="_blank"
-                            style="float:right;"><input  value="Conheça meu trabalho" ></a>
-                        </td>
-
-                        <td>
-                            <img src="portfolio-7070886_1280.png" alt="" width="200px">
-                            <h3>Site de Portifolio:</h3>
-                            <p>Desenvolvi meu portfólio online para exibir meus projetos, habilidades e experiência profissional. Utilizei HTML, CSS e JavaScript para criar uma interface limpa e responsiva, permitindo fácil navegação em diferentes dispositivos. O site inclui seções como Sobre mim, Projetos e Contato, destacando minha evolução e experiência em desenvolvimento web.</p>
-                            <a id="botao" href="https://williamcruz12.github.io/PortifolioWilliam/"target="_blank"
-                            style="float:right;"><input  value="Conheça meu trabalho" ></a>
-                        </td>
-                        
-                </tr>
-                    
-                </table>  
-                       
+            <h2>Os meus projetos</h2>
+            <div class="projetos">
+                <div class="projeto-item">
+                    <img src="web.jpg" alt="Projeto 1" />
+                    <h3>Site institucional:</h3>
+                    <p>Desenvolvi um site institucional para apresentar a identidade de uma cidade, serviços e facilitar o contato com clientes. Utilizei HTML, CSS e JavaScript para criar uma interface responsiva e funcional, com seções como sobre nós, serviços, contacto e formulários. O projeto aprimorou as minhas habilidades em design, e desenvolvimento front-end como também a otimização web.</p>
+                    <a href="https://williamcruz12.github.io/sitefreixo/" target="_blank" class="btn">Conheça meu trabalho</a>
+                </div>
+        
+                <div class="projeto-item">
+                    <img src="ecomerce.avif" alt="Projeto 2" />
+                    <h3>Site de Portfólio:</h3>
+                    <p>Desenvolvi portfólios online para exibir projetos, habilidades e experiências profissionais dos meus clientes. Utilizei HTML, CSS e JavaScript para criar uma interface limpa e responsiva, permitindo fácil navegação em diferentes dispositivos. O site inclui seções como Sobre mim, Projetos e Contactos, destacando a minha evolução e experiência em desenvolvimento web.</p>
+                    <a href="https://williamcruz12.github.io/sitefreixo/" target="_blank" class="btn">Conheça meu trabalho</a>
+                </div>
+        
+                <div class="projeto-item">
+                    <img src="portfolio-7070886_1280.png" alt="Projeto 3" />
+                    <h3>Site de Portfólio:</h3>
+                    <p>Desenvolvi o meu portfólio online para exibir os meus projetos, habilidades e experiência profissional. Utilizei HTML, CSS e JavaScript para criar uma interface limpa e responsiva, permitindo fácil navegação em diferentes dispositivos. O site inclui seções como Sobre mim, Projetos e Contactos, destacando a minha evolução e experiência em desenvolvimento web.</p>
+                    <a href="https://williamcruz12.github.io/PortifolioWilliam/" target="_blank" class="btn">Conheça meu trabalho</a>
+                </div>
+            </div>
         </div>
+        
 
         <div class="profissional">
-            <h2 style="text-align: center;">Experiencia profissional</h2>
-            <br>
-
-            <table>
-                <tr>
-                    <td class="image">
-                        <img src="aperto de mao.webp" alt="Imagem de aperto de mão" class="img-responsive" max-height="200px" max-width="200px">
-                    </td>
+            <h2 style="text-align: center;">Experiência Profissional</h2>
         
-                    <td class="experience">
-                
-                        <h4>Freelancer de Desenvolvimento Web</h4>
-                        <p>Atuo criando sites institucionais, portfólios e lojas virtuais para pequenos clientes. Utilizei HTML, CSS e JavaScript para oferecer soluções personalizadas, aprimorando minhas habilidades, desenvolvimento responsivo e otimização de performance.</p>
-                    </td>
+            <table class="experiencia">
+                <tr>
                     <td class="image">
                         <img src="aperto de mao.webp" alt="Imagem de aperto de mão" class="img-responsive">
                     </td>
-                    <td>
-                        <h4>Estagiário de desenvolvimento</h4>
-                        <p>Estagiário de desenvolvimento para atuar de forma autônoma, com foco na criação e manutenção de soluções tecnológicas, responsável por desenvolver, e implementar códigos e suporte técnico.</p>
+        
+                    <td class="descricao">
+                        <h4>Freelancer de Desenvolvimento Web</h4>
+                        <p>Atuo criando sites institucionais, portfólios e lojas virtuais para pequenos clientes. Utilizei HTML, CSS e JavaScript para oferecer soluções personalizadas, aprimorando minhas habilidades, desenvolvimento responsivo e otimização de performance.</p>
+                    </td>
+        
+                    <td class="image">
+                        <img src="aperto de mao.webp" alt="Imagem de aperto de mão" class="img-responsive">
+                    </td>
+        
+                    <td class="descricao">
+                        <h4>Estagiário de Desenvolvimento</h4>
+                        <p>Estagiário de desenvolvimento para atuar de forma autónoma, com foco na criação e manutenção de soluções tecnológicas, responsável por desenvolver, implementar códigos e suporte técnico.</p>
                     </td>
                 </tr>
-                <th>
-                <a id="botao" href="CV William Atualizado.pdf" download style="float:right;" target="_blank">
-                    <input type="button" value="CV Download">
-                </a>
-            </th>
             </table>
-
+        
+            <a id="botao" href="CV William Atualizado.pdf" download style="float: right;" target="_blank">
+                <input type="button" value="CV Download">
+            </a>
         </div>
-        <br><br><br>
+        
+     
     
     <div>            
         <h3 style="text-align: center;">Obrigado por me visitar!</h3>
@@ -194,7 +181,7 @@
         <table>
             <tr>
                 <td>
-                    <h5>Pronto paracomeçar?</h5>
+                    <h5>Pronto para começar?</h5>
                     <p>Entre em contato através do meu <br>e-mail ou pelas redes sociais,<br> Vamos transformar a sua ideia em realidade.</p>
                 </td>
                
@@ -207,45 +194,40 @@
                                
             </tr>
         </table>
+    </div>
 
 
-        <section class="minhas-skills row container">
-            <h2 class="text-center">Fale comigo</h2>
-            <br><br><br><br>
-            
-            <!-- Coluna de telefone -->
-            <div class="services col-12 col-md-4 text-center">
-                <a href="https://wa.me/910850273"><i class="fa fa-phone" style="font-size:48px;"></i></a>
-                <h3>Telefone</h3>
-                <p>Ligue-me para obter <br> suporte imediato</p>
-                <a href="https://wa.me/910850273" class="btn btn-success btn-lg" target="_blank">
-                    <i class="bi bi-whatsapp me-2"></i>WhatsApp
-                  </a>
-               
-            </div>
-            
-            <div class="services col-12 col-md-4 text-center">
-                <!-- Ícone de E-mail com link mailto -->
-                <a href="mailto:cavalcante.william@icloud.com">
-                    <i class="fa fa-envelope" style="font-size:48px;"></i>
-                </a>
-                <h3>E-mail</h3>
-                <p>Envie-me um email <br> com as suas questões</p>
-                <!-- Link para envio de e-mail -->
-                <p><a href="mailto:cavalcante.william@icloud.com">Clique aqui para me enviar um e-mail!</a></p>
-            </div>
-            
-            <div class="services col-12 col-md-4 text-center">
-                <a href="cavalcante.william@icloud.com">
-                    <i class="fa fa-envelope" style="font-size:48px;"></i>
-                </a>
-                <h3>LinkedIn</h3>
-                <p>Visite meu perfinal <br>tambem no LinkedIn</p>
-                <p><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="btn btn-primary btn-lg" style="background-color: #0077b5; border-color: #0077b5;" target="_blank">
-                    <i class="bi bi-linkedin me-2"></i>LinkedIn
-                  </a></p>
-            </div>
-        </section>
+    <section class="minhas-skills row container" id="cont-nav">
+        <h2 class="text-center">Fale comigo</h2>
+        <br><br><br><br>
+    
+        <!-- Coluna de telefone -->
+        <div class="services col-12 col-sm-6 col-md-4 text-center">
+            <a href="https://wa.me/910850273" target="_blank"><i class="fa fa-phone" style="font-size:48px;"></i></a>
+            <h3>Telefone</h3>
+            <p class="text-center">Envie mensagem via Whatsapp</p>
+        </div>
+    
+        <!-- Coluna de E-mail -->
+        <div class="services col-12 col-sm-6 col-md-4 text-center">
+            <a href="mailto:cavalcante.william@icloud.com" target="_blank">
+                <i class="fa fa-envelope" style="font-size:48px;"></i>
+            </a>
+            <h3>E-mail</h3>
+            <p class="text-center">Envie-me um email com as suas questões</p>
+        </div>
+    
+        <!-- Coluna de LinkedIn -->
+        <div class="services col-12 col-sm-6 col-md-4 text-center">
+            <a href="https://www.linkedin.com/in/cavalcante-william/" target="_blank">
+                <i class="fa fa-linkedin" style="font-size:48px;"></i>
+            </a>
+            <h3>LinkedIn</h3>
+            <p class="text-center">Visite meu perfil no LinkedIn</p>
+        </div>
+    </section>
+    
+    
 
                 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -263,7 +245,7 @@
 
                    
 <footer>          
-<p style="color: white; background-color: black;" >Direitos reservados William cruz </p>
+<p style="color: white; background-color: black;text-align: center;"  >Direitos reservados William cruz </p>
 
 </footer>
                  

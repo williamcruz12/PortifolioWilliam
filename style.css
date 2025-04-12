@@ -1,15 +1,18 @@
 @charset "UTF-8"
 
-
-
-
 body{
     margin: 30px!important;
 }
 
-#nav{
-    background-color: #9D4818;
-}
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+    background-color: #9D4818; /* Adiciona um fundo para que o conteúdo de baixo não se sobreponha */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave para destacar */
+  }
 
 #nav a {
     color: white;
@@ -20,47 +23,128 @@ body{
 }
 
 p {
-    color: #314028;
-    font-size: 1.1em;
+    color: #314028 !important;
+    font-size: 1.1em !important;
+    text-shadow: 0px 0.5px #9D4818 !important;
+    text-align: justify !important;
 }
 h2, h3, h4, h5, h6{
     color:#9D4818;
     text-shadow: 0px 1px #9D4818;
    
 }
+
+/*sobre mim */
+
+/* Estilos básicos e responsivos */
 .sobremim1 {
-    width: 100%;
+    
+    padding: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    box-sizing: border-box; 
+    font-family: 'Arial', sans-serif;
 }
 
+.sobremim1 h2 {
+    font-size: 2rem;
+
+    margin-bottom: 1rem;
+}
+
+.sobremim1 p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+
+}
+
+/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
     .sobremim1 {
-        width: 95%; /* Ajustar para telas menores */
+        padding: 1.5rem;
+    }
+
+    .sobremim1 h2 {
+        font-size: 1.75rem;
+    }
+
+    .sobremim1 p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsividade para telas menores (ex: celulares) */
+@media (max-width: 480px) {
+    .sobremim1 {
+        padding: 1rem;
+    }
+
+    .sobremim1 h2 {
+        font-size: 1.5rem;
+    }
+
+    .sobremim1 p {
+        font-size: 0.95rem;
     }
 }
 
 
-        .inicio {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-           
-        }
 
-        table {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-spacing: 0;
-            margin: 0;
-        }
-
-        td {
-            padding: 10px;
-        }
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .conteudo {
+    display: flex;
+    flex-direction: row; /* Padrão: lado a lado */
+    align-items: center;
+    gap: 20px; /* Espaço entre a imagem e o texto */
+  }
+  
+  .foto {
+    width: 250px; /* Tamanho fixo da imagem */
+    height: 250px;
+   
+  }
+  
+  #eu {
+    text-align: center;
+  }
+  
+  #sobre2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .conteudo {
+      flex-direction: column; /* Em telas pequenas, imagem e texto ficam empilhados */
+      align-items: center; /* Centraliza os itens */
+      text-align: center;
+    }
+  
+    .foto {
+      width: 200px; /* Ajusta o tamanho da imagem em telas menores */
+    }
+  
+    #sobre2 {
+      font-size: 1.2rem; /* Ajusta o tamanho da fonte em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .foto {
+      width: 200px; /* Ajusta o tamanho da imagem para telas ainda menores */
+    }
+  
+    #sobre2 {
+      font-size: 1rem; /* Diminui o tamanho da fonte em telas muito pequenas */
+    }
+  }
+  
 
         /* Estilizando a imagem */
         img {
@@ -68,16 +152,10 @@ h2, h3, h4, h5, h6{
             box-shadow: 1px 1px 1px 1px #9d4918ad;
             width: 100%;
             max-width: 300px; /* Limita a largura da imagem */
-            height: auto; /* Mantém a proporção da imagem */
+            height: 300px; /* Mantém a proporção da imagem */
         }
 
-        /* Estilo do título */
-        #eu h2 {
-            font-size: 2.1rem;
-            margin: 0;
-        }
-
-        /* Responsividade */
+            /* Responsividade */
         @media (max-width: 768px) {
             table {
                 flex-direction: column;
@@ -85,7 +163,7 @@ h2, h3, h4, h5, h6{
             }
 
             img {
-                max-width: 80%; /* Ajusta o tamanho da imagem em telas menores */
+                max-width: 100%; /* Ajusta o tamanho da imagem em telas menores */
             }
 
             #eu h2 {
@@ -94,83 +172,226 @@ h2, h3, h4, h5, h6{
         }
 
 
-
-table.skills{
-border-radius: 10px;
- color: black;
- margin-top: 50px;
- min-width: 375px;
- width: 100%; 
- text-align: center;
-    
-}
-.skillsh2{
+/* Estilos gerais para as skills */
+.skillsh2 {
     text-align: center;
-    margin-top: 30px;
-    padding: 30px;
-
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
 }
 
-
-.projeto{
-padding: 90px;
-    
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexível para qualquer tela */
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo */
 }
 
-#botao input {
-
-padding: 5px ;
-cursor: pointer;
-background-color: #314028;
-color: white;
-border: none;
-border-radius: 5px;
-box-shadow: 2px 2px #9D4818;
-    
+/* Item individual das skills */
+.skill-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Estilos dos títulos e texto */
+.skill-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skill-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 1200px) {
+    .skills {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas grandes */
+        gap: 40px; /* Maior espaçamento entre os itens */
+    }
+
+    .skill-item {
+        padding: 25px;
+    }
+}
+
+/* Ajustes para telas médias (tablet) */
+@media (max-width: 1200px) {
+    .skills {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* 2 ou 3 colunas dependendo do tamanho */
+    }
+}
+
+/* Ajustes para telas menores (celular - iPhone 14, por exemplo) */
 @media (max-width: 768px) {
-    table {
-        display: block;
-        width: 100%;
+    .skills {
+        grid-template-columns: 1fr; /* 1 coluna para telas pequenas */
+        gap: 20px; /* Reduzir o gap para telas pequenas */
     }
 
-    td {
-        display: block;
-        width: 100%;
-        margin-bottom: 20px;
+    .skill-item {
+        padding: 15px; /* Menos padding para dispositivos pequenos */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        grid-template-columns: 1fr; /* 1 coluna para telas muito pequenas */
     }
 
-    .image {
-        text-align: center;
-        margin-bottom: 20px;
+    .skill-item h3 {
+        font-size: 1.2rem; /* Ajustar o título para telas pequenas */
     }
 
-    .experience {
-        padding-left: 0;
+    .skill-item p {
+        font-size: 0.9rem; /* Ajustar o tamanho da fonte para telas pequenas */
     }
 
-    .experience h4 {
-        font-size: 16px;
-    }
-
-    .experience p {
-        font-size: 12px;
-    }
-
-    .profissional h2 {
-        font-size: 20px;
+    .skill-item img {
+        max-width: 150px; /* Ajuste de tamanho da imagem */
     }
 }
 
 
+/* Estilos gerais */
+.projeto h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajuste para maior flexibilidade */
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px; /* Limita a largura máxima para telas grandes */
+    margin: 0 auto; /* Centraliza os projetos */
+}
+
+/* Item de projeto */
+.projeto-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.projeto-item img {
+    width: 100%;
+    height: 100px;
+    max-width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Estilos dos títulos e texto */
+.projeto-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.projeto-item p {
+    font-size:
+}
+
+/*profissional*/
+
+/* Estilos gerais */
+.experiencia {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.experiencia td {
+    padding: 15px;
+    vertical-align: top;
+}
+
+/* Responsividade para telas grandes */
+@media (max-width: 1024px) {
+    .experiencia {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+/* Responsividade para telas pequenas (iPhone 14 e dispositivos similares) */
+@media (max-width: 768px) {
+    .experiencia {
+        display: block;
+    }
+
+    .experiencia td {
+        display: block;
+        width: 100%; /* Faz com que as células ocupem toda a largura */
+        padding: 10px;
+    }
+
+    .descricao {
+        margin-top: 15px; /* Adiciona um espaço entre as descrições */
+    }
+
+    #botao {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* Estilos para o botão */
+#botao input[type="button"] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #9D4818;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#botao input[type="button"]:hover {
+    background-color: #314028;
+}
 
 
-  
-   
- 
-    
-   
+/*rede social*/
+
+
  
 
 
