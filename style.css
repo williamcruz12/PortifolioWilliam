@@ -1,42 +1,25 @@
 @charset "UTF-8"
 
+
+
 body{
-    margin: 30px!important;
+    margin: 0px!important;
+    font-family: 'Arial', sans-serif !important;
 }
 
-#nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
-    background-color: #9D4818; /* Adiciona um fundo para que o conteúdo de baixo não se sobreponha */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave para destacar */
-  }
-
-#nav a {
-    color: white;
-    text-shadow: 0px 1px #314028;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
-    text-align: center 
+nav{
+    background-color: #9D4818;
+    font-family: 'Arial', sans-serif;;
 }
+
 
 p {
-    color: #314028 !important;
-    font-size: 1.1em !important;
-    text-shadow: 0px 0.5px #9D4818 !important;
+    color: #314028 !important;   
+    text-shadow: 0.1px 0.1px #555 !important;
     text-align: justify !important;
-}
-h2, h3, h4, h5, h6{
-    color:#9D4818;
-    text-shadow: 0px 1px #9D4818;
-   
 }
 
 /*sobre mim */
-
-/* Estilos básicos e responsivos */
 .sobremim1 {
     
     padding: 2rem;
@@ -48,8 +31,8 @@ h2, h3, h4, h5, h6{
 
 .sobremim1 h2 {
     font-size: 2rem;
-
     margin-bottom: 1rem;
+    font-family: 'Arial', sans-serif;
 }
 
 .sobremim1 p {
@@ -105,13 +88,14 @@ h2, h3, h4, h5, h6{
   }
   
   .foto {
-    width: 250px; /* Tamanho fixo da imagem */
-    height: 250px;
+    width: 300px; /* Tamanho fixo da imagem */
+    height: 300px;
    
   }
   
   #eu {
     text-align: center;
+    
   }
   
   #sobre2 {
@@ -127,7 +111,7 @@ h2, h3, h4, h5, h6{
     }
   
     .foto {
-      width: 200px; /* Ajusta o tamanho da imagem em telas menores */
+      width: 250px; /* Ajusta o tamanho da imagem em telas menores */
     }
   
     #sobre2 {
@@ -137,7 +121,7 @@ h2, h3, h4, h5, h6{
   
   @media (max-width: 480px) {
     .foto {
-      width: 200px; /* Ajusta o tamanho da imagem para telas ainda menores */
+      width: 250px; /* Ajusta o tamanho da imagem para telas ainda menores */
     }
   
     #sobre2 {
@@ -281,7 +265,7 @@ h2, h3, h4, h5, h6{
 .projeto h2 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin: 60px;
     color: #333;
 }
 
@@ -315,85 +299,112 @@ h2, h3, h4, h5, h6{
     max-width: 200px;
     border-radius: 10px;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 /* Estilos dos títulos e texto */
 .projeto-item h3 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #333;
-}
-
-.projeto-item p {
-    font-size:
 }
 
 /*profissional*/
 
 /* Estilos gerais */
-.experiencia {
-    width: 100%;
-    border-collapse: collapse;
-}
+.profissional {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 50px;
+  }
 
-.experiencia td {
+  .experiencia-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .experiencia-item {
+    flex: 1 1 300px;
     padding: 15px;
-    vertical-align: top;
-}
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
 
-/* Responsividade para telas grandes */
-@media (max-width: 1024px) {
-    .experiencia {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+  .experiencia-item img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 15px;
+  }
+
+  #botao {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+
+  }
+
+  @media (max-width: 768px) {
+    .experiencia-container {
+      flex-direction: column;
+      align-items: center;
     }
-}
 
-/* Responsividade para telas pequenas (iPhone 14 e dispositivos similares) */
-@media (max-width: 768px) {
-    .experiencia {
-        display: block;
-    }
-
-    .experiencia td {
-        display: block;
-        width: 100%; /* Faz com que as células ocupem toda a largura */
-        padding: 10px;
-    }
-
-    .descricao {
-        margin-top: 15px; /* Adiciona um espaço entre as descrições */
+    .experiencia-item {
+      width: 100%;
     }
 
     #botao {
-        text-align: center;
-        margin-top: 20px;
+      text-align: center;
+      
     }
-}
 
-/* Estilos para o botão */
-#botao input[type="button"] {
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: #9D4818;
-    color: white;
-    border: none;
-    cursor: pointer;
+  }
+
+
+/*Agradecimento*/
+
+  .agradecimento {
+   
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .agradecimento h3 {
     text-align: center;
-}
-
-#botao input[type="button"]:hover {
-    background-color: #314028;
-}
-
-
-/*rede social*/
-
-
  
+  }
 
+  .conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .conteudo-item {
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  .conteudo-item h5 {
+    margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    .conteudo {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  #footer{
+    margin: 0px;
+  }
 
  
 
