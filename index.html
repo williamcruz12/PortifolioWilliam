@@ -5,59 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio William </title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS do Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-    <!-- Adicionando Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 
     <script src="https://kit.fontawesome.com/d132031da6.js" crossorigin="anonymous"></script>
+    
+    
+    <meta name="description" content="Portfólio de William Cruz - Desenvolvedor Web. Veja meus projetos em HTML, CSS, JS, PHP e Python.">
+    <meta name="keywords" content="desenvolvedor web, portfólio, HTML, CSS, JavaScript, PHP, Python, William Cruz">
+    <meta name="author" content="William Cruz">
+
 </head>
 
 <body>
-   
-<header id="inic1">
-    <nav id="nav" class="navbar navbar-expand-lg navbar-light">
-        <div id="h2" class="container-fluid">
-                <a class="navbar-brand" href="#">William Cruz <br>Portifolio</a>
-
-                <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
-                <span class="navbar-toggler-icon" ></span>
-                </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                    <a class="nav-link" href="#sobremimnav">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skillnav">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cont-nav" target="_blank">Contactos</a>
-                    </li>
-                </ul>
-            </div>
-        </div> 
-    </nav>          
-</header>
-    
+    <header> 
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light" style="position: fixed; width: 100%; z-index: 999;">
+            <div id="h2" class="container-fluid">
+                    <a class="navbar-brand" href="#nav" id="t-nome">William Cruz <br>Portifolio</a>
+                    <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+                    <span class="navbar-toggler-icon" ></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto" id="links">
+                            <li class="nav-item" >
+                                <a class="nav-link" id="al" href="#sobremimnav">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"id="al" href="#skillnav">Serviços</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"id="al" href="#cont-nav">Contactos</a>
+                            </li>
+                        </ul>
+                </div>
+            </div> 
+        </nav>          
+    </header>
+                  
 <main>
         
-    <div class="inicio">
+    <div class="inicio" style="padding-top: 100px;">
         <div class="conteudo">
-                <img src="Foto-William.jpg" alt="minhafoto" class="foto">
+                <img src="Foto-William.jpg" alt="Minha foto" class="foto">
             <div id="eu">
                 <h2 id="sobre2">Olá, eu sou o William Cruz <br> e sou Web Development!</h2>
             </div>
             <div>
-                <input type="button" value="CV Download" style="background-color:#314028;border-radius: 10px 10px; box-shadow: 1px 1px #9D4818; color: white;">
-                    <a id="botao" href="CV-william-tualizado.pdf" download target="_blank"></a>
+                <a href="CV-william-tualizado.pdf" target="_blank"
+                style="display: inline-block; padding: 3px; background-color:#314028; border-radius: 8px; box-shadow: 1px 2px #9D4818; color: white; text-decoration: none;">Cv Download</a>
             </div>
         </div>
     </div>
@@ -70,34 +64,34 @@
     </div>
            
     <div class="skills1" id="skillnav">
-            <h2 class="skillsh2">As minhas skills</h2>
+            <h2 class="skillsh2">Minhas Skills</h2>
         <div class="skills">
             <div class="skill-item">
-                <h3>Programação Web <br>HTML5 / CSS3</h3>
+                <h3>HTML5 / CSS3</h3>
                 <p>Boa compreensão dos princípios de marcação semântica com HTML5 e estilização com CSS3. Capacidade de criar layouts responsivos e acessíveis. <br>Experiência com criação de páginas estáticas, familiaridade com boas práticas de estruturação de código e otimização de performance.</p>
                 <img src="pngtree-logo-html-css-icone-and-png-image_9202872.png" alt="HTML5 e CSS3">
             </div>
 
             <div class="skill-item">
-                <h3>Programação <br>JavaScript</h3>
+                <h3>JavaScript</h3>
                 <p>Uso JavaScript focado no desenvolvimento de interfaces web interativas. Tenho conhecimento dos fundamentos da linguagem e manipulação do DOM para criar elementos dinâmicos e interativos em páginas HTML. <br> Estou em constante aprendizagem, procurando aplicar boas práticas de desenvolvimento e melhorar a minha lógica de programação no dia a dia.</p>
                 <img src="javascript-transparent-logo-free-png.webp" alt="JavaScript">
             </div>
 
             <div class="skill-item">
-                <h3>Programação <br>PHP</h3>
+                <h3>PHP</h3>
                 <p>Conhecimento nos fundamentos da linguagem PHP para desenvolvimento web. Experiência com criação de páginas dinâmicas, manipulação de formulários, conexão com bancos de dados MySQL e organização de código em estruturas funcionais. <br>Estou em constante evolução em busca de boas práticas, segurança básica no backend e integração.</p>
                 <img src="php-imagem.png" alt="PHP">
             </div>
 
             <div class="skill-item">
-                <h3>Programação <br>Python</h3>
+                <h3>Python</h3>
                 <p>Conhecimento nos fundamentos da linguagem Python, familiaridade com boas práticas de codificação, organização de código e princípios da programação orientada a objetos. <br> Estou em constante aprendizagem, explorando também bibliotecas, com interesse em áreas como automação, desenvolvimento web e análise de dados.</p>
                 <img src="python.png" alt="Python">
             </div>
 
             <div class="skill-item">
-                <h3>Base Dados<br>MySQL</h3>
+                <h3>MySQL</h3>
                 <p>Conhecimento em modelagem e manipulação de bancos de dados relacionados com MySQL. Habilidade para escrever consultas SQL e funções agregadas. <br> Conhecimento com scripts de backup e restauração de banco e integração com linguagens como PHP e Python em projetos.</p>
                 <img src="free-mysql-21-1174941.webp" alt="MySQL">
             </div>
@@ -107,30 +101,29 @@
         
 
     <div class="projeto">
-            <h2>Os meus projetos</h2>
+            <h2>Meus Projetos</h2>
         <div class="projetos">
             <div class="projeto-item">
                 <img src="web.jpg" alt="Projeto 1">
                 <h3>Site institucional:</h3>
                 <p>Desenvolvi um site institucional para apresentar a identidade de uma cidade, serviços e facilitar o contato com clientes. Utilizei HTML, CSS e JavaScript para criar uma interface responsiva e funcional, com seções como sobre nós, serviços, contacto e formulários. O projeto aprimorou as minhas habilidades em design, e desenvolvimento front-end como também a otimização web.</p>
-                <input type="button" value="Conheça o trabalho" style="background-color:#314028;border-radius: 10px 10px; box-shadow: 1px 1px #9D4818; color: white;">
-                <a id="botao-Freixo" href="https://williamcruz12.github.io/sitefreixo/" download target="_blank"></a>
+                <a href="https://williamcruz12.github.io/sitefreixo/" target="_blank"rel="noopener noreferrer" style="display: inline-block; padding: 3px; background-color:#314028; border-radius: 10px; box-shadow: 1px 2px #9D4818; color: white; text-decoration: none;"> Conheça meu trabalho</a>
+
+                
             </div>
 
             <div class="projeto-item">
                 <img src="ecomerce.avif" alt="Projeto 2">
-                <h3>Ecomerce:</h3>
+                <h3>E-commerce:</h3>
                 <p>Desenvolvi portfólios online para exibir projetos, habilidades e experiências profissionais dos meus clientes. Utilizei HTML, CSS e JavaScript para criar uma interface limpa e responsiva, permitindo fácil navegação em diferentes dispositivos. O site inclui seções como Sobre mim, Projetos e Contactos, destacando a minha evolução e experiência em desenvolvimento web.</p> 
-                <input type="button" value="Conheça o trabalho" style="background-color:#314028;border-radius: 10px 10px; box-shadow: 1px 1px #9D4818; color: white;">
-                <a id="botao-ecomer" href="#" ></a>       
+                <a href="https://williamcruz12.github.io/sitefreixo/" target="_blank"rel="noopener noreferrer" style="display: inline-block; padding: 3px; background-color:#314028; border-radius: 10px; box-shadow: 1px 2px #9D4818; color: white; text-decoration: none;"> Conheça meu trabalho</a>       
             </div>
         
             <div class="projeto-item">
                 <img src="portfolio-7070886_1280.png" alt="Projeto 3">
                 <h3>Portfólios online:</h3>
                 <p>Desenvolvi o meu portfólio online para exibir os meus projetos, habilidades e experiência profissional. Utilizei HTML, CSS e JavaScript para criar uma interface limpa e responsiva, permitindo fácil navegação em diferentes dispositivos. O site inclui seções como Sobre mim, Projetos e Contactos, destacando a minha evolução e experiência em desenvolvimento web.</p>
-                <input type="button" value="Conheça o trabalho" style="background-color:#314028;border-radius: 10px 10px; box-shadow: 1px 1px #9D4818; color: white;">
-                <a id="botao-portifolio" href="https://williamcruz12.github.io/PortifolioWilliam/" download target="_blank"> </a>
+                <a href="https://williamcruz12.github.io/PortifolioWilliam/" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 3px; background-color:#314028; border-radius: 10px; box-shadow: 1px 2px #9D4818; color: white; text-decoration: none;">Conheça meu trabalho</a>
             </div>
         </div>
     </div>
@@ -144,8 +137,8 @@
                 <p>Atuo criando sites institucionais, portfólios e lojas virtuais para pequenos clientes. Utilizei HTML, CSS e JavaScript para oferecer soluções personalizadas, aprimorando minhas habilidades, desenvolvimento responsivo e otimização de performance.</p>
             </div>
             <div>
-                <input type="button" value="CV Download" style="background-color:#314028;border-radius: 10px 10px; box-shadow: 1px 1px #9D4818; color: white;">
-                <a id="botao-cv" href="CV-william-tualizado.pdf" download target="_blank"></a>
+                <a href="CV-william-tualizado.pdf" target="_blank"
+                style="display: inline-block; padding: 3px; background-color:#314028; border-radius: 10px; box-shadow: 1px 2px #9D4818; color: white; text-decoration: none;">CV Download</a>
             </div>
         </div>
     </div>
@@ -199,7 +192,7 @@
 <footer class="bg-dark text-white py-3 mt-5">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
         <!-- Texto à esquerda -->
-        <p class="mb-2 mb-md-0">&copy; <span id="ano-atual"></span> William Cruz. Todos os direitos reservados. </p> 
+        <p id="final" class="mb-2 mb-md-0">&copy; <span id="ano-atual"></span> William Cruz. Todos os direitos reservados. </p> 
         <p><a href="https://wa.me/910850273" target="_blank" aria-label="WhatsApp" class="text-white">
             <i class="fa fa-phone fa-lg"></i>
         </a>
@@ -218,16 +211,13 @@
 
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <!-- Adicionando o Bootstrap (opcional, mas para estilização) -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        
 
-        <!-- Scripts do Bootstrap (opcional) -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<!-- Adicionando o Bootstrap (opcional, mas para estilização) ICONES -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">      
+       
+<!-- Bootstrap Bundle com Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-whatever" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
                  
 </body>
 

@@ -1,47 +1,67 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
-
-
-body{
-    margin: 0px!important;
-    font-family: 'Arial', sans-serif !important;
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-nav{
+  
+a {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    transform: scale(1.05);
+    background-color: #3e5032; /* um tom mais escuro */
+  }
+  
+ 
+#nav {
     background-color: #9D4818;
-    font-family: 'Arial', sans-serif;;
-}
-
-
-p {
-    color: #314028 !important;   
-    text-shadow: 0.1px 0.1px #555 !important;
-    text-align: justify !important;
-}
-
-/*sobre mim */
-.sobremim1 {
     
+}
+
+#t-nome {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#links {
+    font-size: 20px;  
+}
+
+/* Cor link */
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+}
+
+/* Parágrafos */
+p {
+    color: #314028;
+    text-shadow: 0.1px 0.1px #555;
+    text-align: justify;
+}
+
+/* SOBRE MIM */
+.sobremim1 {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Arial', sans-serif;
 }
 
 .sobremim1 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    font-family: 'Arial', sans-serif;
 }
 
 .sobremim1 p {
     font-size: 1.125rem;
     line-height: 1.6;
-
 }
 
-/* Responsividade para dispositivos móveis */
+/* RESPONSIVO - SOBRE MIM */
 @media (max-width: 768px) {
     .sobremim1 {
         padding: 1.5rem;
@@ -56,7 +76,6 @@ p {
     }
 }
 
-/* Responsividade para telas menores (ex: celulares) */
 @media (max-width: 480px) {
     .sobremim1 {
         padding: 1rem;
@@ -72,91 +91,82 @@ p {
 }
 
 
-
+/* INÍCIO */
 .inicio {
+    padding-top: 100px; /* para baixa a foto nav */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-  }
-  
-  .conteudo {
+}
+
+.conteudo {
     display: flex;
-    flex-direction: row; /* Padrão: lado a lado */
+    flex-direction: row;
     align-items: center;
-    gap: 20px; /* Espaço entre a imagem e o texto */
-  }
-  
-  .foto {
-    width: 300px; /* Tamanho fixo da imagem */
+    gap: 20px;
+}
+
+.foto {
+    width: 300px;
     height: 300px;
-   
-  }
-  
-  #eu {
+}
+
+#eu {
     text-align: center;
-    
-  }
-  
-  #sobre2 {
+}
+
+#sobre2 {
     font-size: 1.5rem;
     margin: 0;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .conteudo {
-      flex-direction: column; /* Em telas pequenas, imagem e texto ficam empilhados */
-      align-items: center; /* Centraliza os itens */
-      text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
-  
+
     .foto {
-      width: 250px; /* Ajusta o tamanho da imagem em telas menores */
+        width: 250px;
     }
-  
+
     #sobre2 {
-      font-size: 1.2rem; /* Ajusta o tamanho da fonte em telas menores */
+        font-size: 1.2rem;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .foto {
-      width: 250px; /* Ajusta o tamanho da imagem para telas ainda menores */
+        width: 250px;
     }
-  
+
     #sobre2 {
-      font-size: 1rem; /* Diminui o tamanho da fonte em telas muito pequenas */
+        font-size: 1rem;
     }
-  }
-  
+}
 
-        /* Estilizando a imagem */
-        img {
-            border-radius: 10px;
-            box-shadow: 1px 1px 1px 1px #9d4918ad;
-            width: 100%;
-            max-width: 300px; /* Limita a largura da imagem */
-            height: 300px; /* Mantém a proporção da imagem */
-        }
+/* IMAGEM GERAL */
+img {
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #9d4918ad;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
 
-            /* Responsividade */
-        @media (max-width: 768px) {
-            table {
-                flex-direction: column;
-                align-items: center;
-            }
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+    }
 
-            img {
-                max-width: 100%; /* Ajusta o tamanho da imagem em telas menores */
-            }
+    #eu h2 {
+        font-size: 1.2rem;
+    }
+}
 
-            #eu h2 {
-                font-size: 1.2rem; /* Reduz o tamanho da fonte para dispositivos móveis */
-            }
-        }
-
-
-/* Estilos gerais para as skills */
+/* SKILLS */
 .skillsh2 {
     text-align: center;
     font-size: 2rem;
@@ -166,14 +176,13 @@ p {
 
 .skills {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexível para qualquer tela */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     padding: 0 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Centraliza o conteúdo */
+    margin: 0 auto;
 }
 
-/* Item individual das skills */
 .skill-item {
     background-color: #fff;
     border-radius: 10px;
@@ -197,7 +206,6 @@ p {
     margin-bottom: 15px;
 }
 
-/* Estilos dos títulos e texto */
 .skill-item h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -211,11 +219,11 @@ p {
     margin-bottom: 15px;
 }
 
-/* Ajustes para telas grandes */
+/* Responsivo - Skills */
 @media (min-width: 1200px) {
     .skills {
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas grandes */
-        gap: 40px; /* Maior espaçamento entre os itens */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
     }
 
     .skill-item {
@@ -223,45 +231,38 @@ p {
     }
 }
 
-/* Ajustes para telas médias (tablet) */
 @media (max-width: 1200px) {
     .skills {
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* 2 ou 3 colunas dependendo do tamanho */
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     }
 }
 
-/* Ajustes para telas menores (celular - iPhone 14, por exemplo) */
 @media (max-width: 768px) {
     .skills {
-        grid-template-columns: 1fr; /* 1 coluna para telas pequenas */
-        gap: 20px; /* Reduzir o gap para telas pequenas */
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .skill-item {
-        padding: 15px; /* Menos padding para dispositivos pequenos */
+        padding: 15px;
     }
 }
 
 @media (max-width: 480px) {
-    .skills {
-        grid-template-columns: 1fr; /* 1 coluna para telas muito pequenas */
-    }
-
     .skill-item h3 {
-        font-size: 1.2rem; /* Ajustar o título para telas pequenas */
+        font-size: 1.2rem;
     }
 
     .skill-item p {
-        font-size: 0.9rem; /* Ajustar o tamanho da fonte para telas pequenas */
+        font-size: 0.9rem;
     }
 
     .skill-item img {
-        max-width: 150px; /* Ajuste de tamanho da imagem */
+        max-width: 150px;
     }
 }
 
-
-/* Estilos gerais */
+/* PROJETOS */
 .projeto h2 {
     text-align: center;
     font-size: 2rem;
@@ -271,14 +272,13 @@ p {
 
 .projetos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajuste para maior flexibilidade */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     padding: 0 20px;
-    max-width: 1200px; /* Limita a largura máxima para telas grandes */
-    margin: 0 auto; /* Centraliza os projetos */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Item de projeto */
 .projeto-item {
     background-color: #fff;
     border-radius: 10px;
@@ -302,113 +302,106 @@ p {
     margin-bottom: 20px;
 }
 
-/* Estilos dos títulos e texto */
 .projeto-item h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     color: #333;
 }
 
-/*profissional*/
-
-/* Estilos gerais */
+/* PROFISSIONAL */
 .profissional {
     padding: 20px;
     max-width: 1200px;
-    margin: 50px;
-  }
+    margin: 50px auto;
+}
 
-  .experiencia-container {
+.experiencia-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
-  }
+}
 
-  .experiencia-item {
+.experiencia-item {
     flex: 1 1 300px;
     padding: 15px;
     border-radius: 8px;
     box-sizing: border-box;
-  }
+}
 
-  .experiencia-item img {
+.experiencia-item img {
     width: 100px;
     height: 100px;
     display: block;
-    margin: 15px;
-  }
+    margin: 15px auto;
+}
 
-  #botao {
+#botao {
     display: block;
     text-align: right;
     margin-top: 20px;
+}
 
-  }
-
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .experiencia-container {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .experiencia-item {
-      width: 100%;
+        width: 100%;
     }
 
     #botao {
-      text-align: center;
-      
+        text-align: center;
     }
+}
 
-  }
-
-
-/*Agradecimento*/
-
-  .agradecimento {
-   
+/* AGRADECIMENTO */
+.agradecimento {
     max-width: 1000px;
     margin: 0 auto;
     box-sizing: border-box;
-  }
+}
 
-  .agradecimento h3 {
+.agradecimento h3 {
     text-align: center;
- 
-  }
+}
 
-  .conteudo {
+.conteudo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-  }
+}
 
-  .conteudo-item {
+.conteudo-item {
     padding: 20px;
     border-radius: 8px;
     box-sizing: border-box;
-  }
+}
 
-  .conteudo-item h5 {
+.conteudo-item h5 {
     margin-top: 0;
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .conteudo {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  }
+}
 
-  #footer{
-    margin: 0px;
-  }
-
- 
-
-
+#footer {
+    margin: 0;
+padding: 0;
+}
+#final{
+    color: black;
+}
+.bg-dark{
+    padding-bottom: 0px;
+}
 
 
 
