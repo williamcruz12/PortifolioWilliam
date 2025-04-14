@@ -93,7 +93,7 @@ p {
 
 /* INÍCIO */
 .inicio {
-    padding-top: 100px; /* para baixa a foto nav */
+    padding-top: 120px; /* para baixa a foto nav */
     display: flex;
     justify-content: center;
     align-items: center;
