@@ -3,8 +3,21 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    background-color: rgb(240, 240, 240) !important;
 }
 
+h1, h2, h3, h5{
+    color: #6D4C2F !important;
+}
+h4{
+    color:white;
+    text-align: center;
+}
+#prof5{
+    color:white !important;
+    text-align: center;
+
+}
   
 a {
     transition: all 0.3s ease-in-out;
@@ -54,11 +67,13 @@ p {
 .sobremim1 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+  
 }
 
 .sobremim1 p {
     font-size: 1.125rem;
     line-height: 1.6;
+
 }
 
 /* RESPONSIVO - SOBRE MIM */
@@ -171,7 +186,7 @@ img {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #333;
+   
 }
 
 .skills {
@@ -313,6 +328,15 @@ img {
     padding: 20px;
     max-width: 1200px;
     margin: 50px auto;
+    background-color: #314028;
+    border-radius: 10px;
+}
+
+.prof1{
+    color: white;
+}
+.prof2{ 
+    color: white;
 }
 
 .experiencia-container {
